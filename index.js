@@ -3,7 +3,7 @@ const cors = require("cors");
 const bodyParser= require('body-parser')
 const app = express();
 const config = require("./config/config");
-const user = require('./routers/user.routes')
+// const user = require('./routers/user.routes')
 
 var corOptions = {
   origin: "http://localhost:3000",
@@ -16,7 +16,7 @@ app.use(express.json());
 // app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
 app.use(bodyParser.text({ type: 'text/plain' }));
 
-app.use("/", user);
+// app.use("/", user);
 //test
 
 app.get("/", (req, res) => {
