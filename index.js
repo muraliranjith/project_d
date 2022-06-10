@@ -20,9 +20,9 @@ app.use(bodyParser.text({ type: 'text/plain' }));
 // app.use("/", user);
 //test
 
-// app.get("/", (req, res) => {
-//  res.status(200).send("ok")
-// });
+app.get("/", (req, res) => {
+ res.status(200).send("ok")
+});
 
 app.post("/", (req, res) => {
   const payload = JSON.stringify(req.body);
